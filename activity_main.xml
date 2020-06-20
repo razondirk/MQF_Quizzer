@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.razon.mqfquizzer.MainActivity">
+
+    <TextView
+        android:id="@+id/questionTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@android:drawable/alert_light_frame"
+        android:enabled="true"
+        android:text="Question Text Box"
+        android:textAlignment="center"
+        android:maxHeight="180dp"
+        android:minHeight="180dp"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/answerATextbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/questionTextBox"
+        android:background="@android:drawable/alert_light_frame"
+        android:contextClickable="true"
+        android:onClick="answerAClicked"
+        android:text="Answe A Textbox"
+        android:enabled="true"
+        android:textAlignment="center"
+        android:minWidth="490dp"
+        android:maxWidth="490dp"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:maxHeight="186dp"
+        android:minHeight="186dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/answerBTextbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/questionTextBox"
+        android:layout_below="@+id/questionTextBox"
+        android:background="@android:drawable/alert_light_frame"
+        android:contextClickable="true"
+        android:onClick="answerBClicked"
+        android:text="Answer B Textbox"
+        android:enabled="true"
+        android:textAlignment="center"
+        android:minWidth="490dp"
+        android:maxWidth="490dp"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:maxHeight="186dp"
+        android:minHeight="186dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/answerCTextbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/alert_light_frame"
+        android:contextClickable="true"
+        android:onClick="answerCClicked"
+        android:text="Answer C Textbox"
+        android:enabled="true"
+        android:textAlignment="center"
+        android:minWidth="490dp"
+        android:maxWidth="490dp"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:maxHeight="186dp"
+        android:minHeight="186dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/answerDTextbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/answerCTextbox"
+        android:layout_alignEnd="@+id/answerBTextbox"
+        android:background="@android:drawable/alert_light_frame"
+        android:contextClickable="true"
+        android:onClick="answerDClicked"
+        android:text="Answer D Textbox"
+        android:enabled="true"
+        android:textAlignment="center"
+        android:minWidth="490dp"
+        android:maxWidth="490dp"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:maxHeight="186dp"
+        android:minHeight="186dp"
+        android:textSize="25dp" />
+
+</RelativeLayout>
